@@ -6,6 +6,7 @@ $(document).ready(function () {
     let linkTag = $("#linkField");
     let check_value = $(".radio-2:checked").val();
     let check_value_1 = $(".radio:checked").val();
+    let check_value_other_radio = $(".other_radio:checked").val();
     let rate = $("#HourlyRate");
     let other_sourceTag = $("#otherSource");
     let radio_define_check = $("input[name='Define_Yourself']:checked").length;
@@ -59,7 +60,7 @@ $(document).ready(function () {
       }
     }
 
-    if (check_value === "Freelancer") {
+    if (check_value === "Freelancer" && check_value_other_radio === "Others") {
       let other_sourceCheck = /^[a-zA-Z\s]*$/;
       if (
         other_sourceTag.val() === "" ||
