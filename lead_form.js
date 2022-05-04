@@ -13,10 +13,7 @@ $(document).ready(function () {
     let availability_radio = $("input[name='availability']:checked").length;
     let technology_radio = $("input[name='technology']:checked").length;
     let source_radio = $("input[name='source']:checked").length;
-
-    if (source_radio === 0) {
-      $("#source-error").html("Please select one.");
-    }
+    
     if (radio_define_check === 0) {
       $("#radio-error").html("Please select one.");
     }
@@ -29,6 +26,9 @@ $(document).ready(function () {
       }
       if (technology_radio === 0) {
         $("#technology-error").html("Please select one.");
+      }
+      if (source_radio === 0) {
+      $("#source-error").html("Please select one.");
       }
     }
 
