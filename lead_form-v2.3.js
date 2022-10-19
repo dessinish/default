@@ -252,8 +252,6 @@ $(document).ready(function () {
     });
 
     linkTag.keyup(function (e) {
-      //let linkcheck = /^(http(s)?:\/\/)+[\w\-\._~:\/?#[\]@!\$&'\(\)\*\+,;=.]+$/;
-      //let linkcheck = /^((https?|ftp|smtp):\/\/)?(www.)?[a-z0-9]+(\.[a-z][_-]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/;
       let linkCheck =
           /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
       if (linkTag.val().match(linkCheck)) {
