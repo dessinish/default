@@ -158,7 +158,6 @@ $(document).ready(function () {
 
     $("#teamSize").on("change", function (e) {
       let teamSize = $("#teamSize option:selected").index();
-      // console.log(teamSize);
       if (teamSize > 0) {
         $("#team-size-error").html("");
         return true;
